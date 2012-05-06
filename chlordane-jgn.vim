@@ -38,7 +38,7 @@ hi Special  guifg=#55af66 guibg=#223333 gui=bold
 " status line
 hi StatusLine   guifg=#88ee99 guibg=#447f55 gui=bold
 hi StatusLineNC term=bold cterm=bold ctermfg=green ctermbg=Black
-hi StatusLineNC term=bold gui=bold guifg=#3a553a  guibg=Black
+hi StatusLineNC term=bold gui=bold guifg=#3a553a  guibg=#447f55
 hi Title    guifg=#77dd88 guibg=#223322 gui=bold
 hi Visual   guifg=#77dd88 guibg=#448844 gui=none
 hi VisualNOS    guifg=#55af66 guibg=#000000

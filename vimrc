@@ -1,20 +1,19 @@
-" This line should not be removed as it ensures that various options are
-" properly set to work with the Vim-related packages.
+" Leave this in if running Arch Linux
 runtime! archlinux.vim
 
-" Tabs and spaces and lines
+" Import stuff for tabs, spaces and lines
 set tabstop=4
 set shiftwidth=4
 set expandtab
 set tw=80
 
-" Fancy stuff
-set cursorline
-
 " Automatic syntax and use line numbers
 syntax on
 set number
-set guifont=Inconsolata\ Medium\ 10
+
+" Use 256 colors. Hopefully, the CSApprox vim script is installed
+set t_Co=256
+colors term1
 
 " I can't stand backups
 set nobackup
@@ -22,7 +21,6 @@ set nowritebackup
 
 " Nice size, about enough for two 80-char windows
 if has ("gui_running")
-   set lines=40 columns=170
+    set cursorline
+    set guifont=Droid\ Sans\ Mono\ 11
 endif
-
-colors github
