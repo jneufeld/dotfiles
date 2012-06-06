@@ -5,7 +5,9 @@ runtime! archlinux.vim
 set tabstop=4
 set shiftwidth=4
 set expandtab
-set tw=80
+set tw=120
+set cc=80
+set backspace=2
 
 " Automatic syntax and use line numbers
 syntax on
@@ -19,8 +21,8 @@ colors term1
 set nobackup
 set nowritebackup
 
-" Nice size, about enough for two 80-char windows
+" Set gvim font
 if has ("gui_running")
     set cursorline
-    set guifont=Droid\ Sans\ Mono\ 11
+    set guifont=Droid\ Sans\ Mono\ 10
 endif
