@@ -6,7 +6,7 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 set tw=120
-set cc=80
+"set cc=80
 set backspace=2
 
 " Automatic syntax and use line numbers
@@ -20,6 +20,10 @@ colors term1
 " I can't stand backups
 set nobackup
 set nowritebackup
+
+" Print red characters after 80 limit ('green' is a bit of a hack... ;)
+highlight OverLength ctermfg=green
+match OverLength /\%81v.\+/
 
 " Set gvim font
 if has ("gui_running")
