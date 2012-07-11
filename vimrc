@@ -13,16 +13,16 @@ set backspace=2
 syntax on
 set number
 
-" Use 256 colors. Hopefully, the CSApprox vim script is installed
+" Use 256 colors. Set colorscheme if using CSApprox.
 set t_Co=256
-colors term1
+"colors term1
 
 " I can't stand backups
 set nobackup
 set nowritebackup
 
-" Print red characters after 80 limit ('green' is a bit of a hack... ;)
-highlight OverLength ctermfg=green
+" Print red characters after 80 limit
+highlight OverLength ctermfg=red
 match OverLength /\%81v.\+/
 
 " Set gvim font
