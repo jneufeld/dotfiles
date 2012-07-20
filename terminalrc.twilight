@@ -1,5 +1,5 @@
 [Configuration]
-FontName=DejaVu Sans Mono 10
+FontName=Inconsolata Bold 11
 MiscAlwaysShowTabs=FALSE
 MiscBell=FALSE
 MiscBordersDefault=TRUE
@@ -29,7 +29,7 @@ TabActivityColor=#cc62cc62cc62
 Term=xterm-color
 ColorCursor=#dadad0d08585
 ColorForeground=#f8f8f8f8f8f8
-ColorBackground=#141414141414
+ColorBackground=#40fb2cfd2378
 ColorPalette1=#8a8a95959797
 ColorPalette2=#cfcf6b6b4c4c
 ColorPalette3=#ddddf2f2a4a4
