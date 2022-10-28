@@ -1,17 +1,26 @@
-#
-# ~/.bashrc
-#
-
-# If not running interactively, don't do anything
+# Don't do anything unless running interactively
 [[ $- != *i* ]] && return
 
-# Useful shortcuts
-alias ls='ls --color=auto'
-alias ll='ls -l'
-alias la='ls -la'
-alias ..='cd ..'
+# Aliases
+alias 'ls'='ls --color=auto --group-directories-first'
+alias 'll'='ls -l'
+alias 'la'='ls -la'
+alias '..'='cd ..'
 
-# Show git branch data in git repos
-# Don't forget: sudo apt-get install git-core bash-completion
-source /etc/bash_completion.d/git-prompt
-export PS1='\u@\h \W$(__git_ps1 " (%s)")$ '
+# Prompt
+#
+# Bold text: `\[$(tput bold)\] ... \[$(tput sgr0)\]`
+#
+# Color text: `\[$(tput setaf N)\] ... \[$(tput sgr0)\]`
+# ANSI color numbers:
+#   0 - black
+#   1 - red
+#   2 - green
+#   3 - yellow
+#   4 - blue
+#   5 - magenta
+#   6 - cyan
+#   7 - white
+#
+# Git branch reference: https://bashrcgenerator.com/
+export PS1="\[$(tput bold)\]\u@\h\[$(tput sgr0)\]:\W\$(git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/') \[$(tput bold)$(tput setaf 5)\]λ \[$(tput sgr0)\]"
