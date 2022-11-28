@@ -1,3 +1,16 @@
+#
+# bashrc
+#
+# NB this file must be moved to a dotfile on the local system
+#
+# In general, I've found it best to keep this sort of file as small as possible.
+# Whether I'm working on hobby projects at home or writing production code at
+# work, bash or something similar is my preferred tool for interacting with a
+# computer. These modifications or customizations are how I tailor that
+# experience.
+#
+# Less is more.
+
 # Don't do anything unless running interactively
 [[ $- != *i* ]] && return
 
