@@ -35,7 +35,7 @@ nmap <leader>w :w!<cr>
 set number
 
 " Paint a vertical line down column 80
-set cc=79
+set cc=80
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -237,25 +237,3 @@ function! VisualSelection(direction, extra_filter) range
     let @/ = l:pattern
     let @" = l:saved_reg
 endfunction
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" vim-plug
-" 
-" https://github.com/junegunn/vim-plug
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-call plug#begin()
-
-Plug 'junegunn/seoul256.vim'
-
-call plug#end()
-
-" seoul256 (dark):
-"   Range:   233 (darkest) ~ 239 (lightest)
-"   Default: 237
-"
-" seoul256 (light):
-"   Range:   252 (darkest) ~ 256 (lightest)
-"   Default: 253
-let g:seoul256_background = 236
-colorscheme seoul256
