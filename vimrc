@@ -35,7 +35,7 @@ nmap <leader>w :w!<cr>
 set number
 
 " Paint a vertical line down column 80
-set cc=80
+set cc=79
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -117,10 +117,12 @@ set smarttab
 set shiftwidth=4
 set tabstop=4
 
-" Linebreak on 120 characters. NB `cc` is set to a visual indicator of column
+" Linebreak on 79 characters.
+"
+" NB `cc` is set to a visual indicator of column
 " width while this specifies an actual break.
 set lbr
-set tw=120
+set tw=79
 
 set ai " Auto indent
 set si " Smart indent
